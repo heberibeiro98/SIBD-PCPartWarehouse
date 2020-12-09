@@ -16,7 +16,23 @@
         </div>
       </div>
       <div class="rightNav">
-        <a href="register.php">Conta</a>
-        <a href="">Carrinho</a>
+        <<?php
+          if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+        ?>
+          <a href="../action_logout.php">Terminar sessão</a>
+          <a href="">Perfil</a>
+          <a href="">Carrinho</a>
+        <?php
+          }
+
+          else {
+        ?>
+          <a href="login.php">Iniciar sessão</a>
+          <a href="register.php">Registar</a>
+          <a href="">Carrinho</a>
+
+        <?php
+          }
+        ?>
       </div>
     </div>

@@ -1,8 +1,10 @@
-<?php $title = 'PCPart Warehouse - O armazém com todas as partes que precisas!';
-include("header.php");?>
+<?php
+  session_start();
+  $title = 'PCPart Warehouse - O armazém com todas as partes que precisas!';
+  include("header.php");
+?>
 
   <div class="main-container">
-    <?php echo $_SESSION['nomecliente']; ?>
     <h1>ARTIGOS EM DESTAQUE</h1>
     <div class="products">
       <div class="product-card">

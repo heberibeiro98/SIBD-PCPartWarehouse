@@ -14,13 +14,11 @@
 
     if($checkemail = $stmt->fetch(PDO::FETCH_ASSOC)) {
       $id = $checkemail['Id'];
-      var_dump($id);
-      $stmt = $dbh->prepare('SELECT Nome FROM Cliente WHERE Id = ?');
+      $stmt = $dbh->prepare('SELECT Nome FROM Cliente JOIN Conta ON Conta.Id = ?');
       $stmt->execute(array($id));
 
       if($checkid = $stmt->fetch(PDO::FETCH_ASSOC)) {
         $nomecliente = $checkid['Nome'];
-        var_dump($nomecliente);
         $_SESSION['loggedin'] = true;
         $_SESSION['nomecliente'] = $nomecliente;
         header("Location: templates/homepage.php");

@@ -12,7 +12,7 @@
       <form action="../action_login.php" method="post">
         <input type="text" name="email" placeholder="Email">
         <input type="password" name="password" placeholder="Password">
-        <input type="submit" value="Register">
+        <input type="submit" value="Entrar">
       </form>
   </body>
 </html>

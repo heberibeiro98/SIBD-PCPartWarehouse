@@ -8,10 +8,10 @@
   $num_telefone = $_POST['num_telefone'];
 
   if(!empty($email) && !empty($password) && !empty($nif) && !empty($nome) && !empty($num_telefone)) {
-    $sql = "SELECT COUNT(*) FROM Conta WHERE Email = '$email'";
-    $checkemail = $dbh->query($sql);
+    $stmt = $dbh->prepare('SELECT COUNT(*) FROM Conta WHERE Email = ?');
+    $stmt->execute(array($email));
 
-    if($checkemail->fetchColumn()) {
+    if($stmt->fetchColumn()) {
       header("Location: templates/register.php");
     }
 
