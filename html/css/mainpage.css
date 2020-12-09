@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container{
+  background-color: darkgrey;
+}
+
+.main-container h1{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.products{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card{
+  padding: 0.2%;
+  flex-grow: 1;
+  flex-basis: 16%;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-info{
+  font-weight: Bold;
+  background-color: white;
+}
+
+.product-image img{
+  max-width: 100%;
+  margin-bottom: -5px;
+}
