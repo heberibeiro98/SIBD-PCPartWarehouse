@@ -11,7 +11,7 @@
       <div class="dropdown">
         <button class="dropbtn">Categorias</button>
         <div class="dropdown-content">
-          <a href="">Periféricos</a>
+          <a href="../list_products.php">Periféricos</a>
           <a href="">Componentes</a>
         </div>
       </div>

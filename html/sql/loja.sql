@@ -126,3 +126,58 @@ CREATE TABLE Disco(
   Tipo_disco TEXT,
   Memoria TEXT
 );
+
+---------------------------------------------ARTIGOS---------------------------------------------
+                          --MONITORES--
+INSERT INTO Artigo VALUES(601867, 'Asus', 'TUF Gaming VG27AQ1A', 499.90, 'Monitores');
+INSERT INTO Artigo VALUES(892719, 'AOC', 'U32E2N', 389.90, 'Monitores');
+INSERT INTO Artigo VALUES(915758, 'Gigabyte', 'M27F Gaming', 259.90, 'Monitores');
+INSERT INTO Artigo VALUES(393303, 'LG', '32UN500-W', 364.90, 'Monitores');
+
+                          --RATOS--
+INSERT INTO Artigo VALUES(025986, 'Razer', 'Basilisk Ultimate Wireless', 149.90, 'Ratos');
+INSERT INTO Artigo VALUES(349864, 'AOC', 'GM200', 19.90, 'Ratos');
+INSERT INTO Artigo VALUES(306304, 'MSI', 'Clutch GM20 Elite', 29.90, 'Ratos');
+INSERT INTO Artigo VALUES(467634, 'Asus', 'Strix Impact II', 79.90, 'Ratos');
+
+                          --TECLADOS--
+INSERT INTO Artigo VALUES(071211, 'Corsair', 'K60 RGB Pro Gaming', 149.90, 'Teclados');
+INSERT INTO Artigo VALUES(612069, 'Razer', 'Huntsman Gears 5', 134.90, 'Teclados');
+INSERT INTO Artigo VALUES(211896, 'Asus', 'Sagaris GK1100', 99.90, 'Teclados');
+INSERT INTO Artigo VALUES(249278, 'Sharkoon', 'Skiller Mech SGK3', 64.90, 'Teclados');
+
+                          --Headphones--
+INSERT INTO Artigo VALUES(030707, 'Razer', 'Opus THX', 209.90, 'Headphones');
+INSERT INTO Artigo VALUES(526137, 'Razer', 'Nari Ultimate Wireless Xbox', 219.90, 'Headphones');
+INSERT INTO Artigo VALUES(941430, 'JBL', 'Quantum 200 Gaming Preto', 59.90, 'Headphones');
+INSERT INTO Artigo VALUES(393954, 'Asus', 'ROG Strix Go Core', 89.90, 'Headphones');
+
+                          --PSU--
+INSERT INTO Artigo VALUES(106808, 'MSI', 'MPG A650GF 650W', 124.90, 'PSU');
+INSERT INTO Artigo VALUES(069730, 'Corsair', 'CX-F RGB CX650F 650W', 87.90, 'PSU');
+INSERT INTO Artigo VALUES(542967, 'Asus', 'ROG Strix 550W', 119.90, 'PSU');
+INSERT INTO Artigo VALUES(917454, 'Seasonic', 'PRIME Snow Silent 650W', 129.90, 'PSU');
+
+                          --CPU--
+INSERT INTO Artigo VALUES(127522, 'AMD', 'Ryzen 7 5800X 8-Core 3.8GHz c/ Turbo 4.7GHz', 472.00, 'Processadores');
+INSERT INTO Artigo VALUES(686590, 'Intel', 'Core i9-10850K 10-Core 3.6GHz c/ Turbo 5.2GHz', 487.90, 'Processadores');
+INSERT INTO Artigo VALUES(750502, 'AMD', 'Ryzen 5 3500X Hexa-Core 3.6GHz c/ Turbo 4.1GHz', 159.90, 'Processadores');
+INSERT INTO Artigo VALUES(189519, 'Intel', 'Pentium Gold G5420 Dual-Core 3.8GHz', 49.90, 'Processadores');
+
+                          --GPU--
+INSERT INTO Artigo VALUES(865514, 'Asus', 'ROG Strix Radeon RX 6800 16GB GDDR6 OC', 794.20, 'Placa gráfica');
+INSERT INTO Artigo VALUES(955710, 'Gigabyte', 'GeForce RTX 3060 Ti Eagle OC 8GB GDDR6', 527.90, 'Placa gráfica');
+INSERT INTO Artigo VALUES(626252, 'MSI', 'GeForce RTX 3060 Ti Gaming X Trio 8GB GDDR6', 484.90, 'Placa gráfica');
+INSERT INTO Artigo VALUES(681755, 'XFX', 'Radeon RX 6800 Speedster MERC319 Black Gaming 16GB', 749.90, 'Placa gráfica');
+
+                          --RAM--
+INSERT INTO Artigo VALUES(206622, 'HyperX', 'Fury DDR4 16GB DDR4-3600MHz', 89.90, 'RAM');
+INSERT INTO Artigo VALUES(415953, 'Corsair', 'Vengeance RGB Pro 8GB DDR4-3200MHz', 527.90, 'RAM');
+INSERT INTO Artigo VALUES(633290, 'HyperX', 'Fury DDR4 16GB DDR4-3000MHz', 92.20, 'RAM');
+INSERT INTO Artigo VALUES(900056, 'HyperX', 'Predator RGB 16GB DDR4-3600MHz', 749.90, 'RAM');
+
+                          --Disco--
+INSERT INTO Artigo VALUES(043050, 'Gigabyte', 'SSD Aorus Gen4 2TB', 389.90, 'Disco');
+INSERT INTO Artigo VALUES(227731, 'Seagate', 'HDD IronWolf 8TB', 249.90, 'Disco');
+INSERT INTO Artigo VALUES(012394, 'Silicon Power', 'SSD Power Ace A55 256GB', 34.90, 'Disco');
+INSERT INTO Artigo VALUES(844191, 'Crucial', 'SSD P5 250GB', 749.90, 'Disco');
