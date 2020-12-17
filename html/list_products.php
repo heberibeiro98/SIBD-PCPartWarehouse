@@ -1,10 +1,11 @@
 <?php
   require_once('config/init.php');
-  require_once('database/product.php');
+  require_once('database/ProductList.php');
 
-  $category = 'Monitores';
+  $category = $_GET['category'];
 
   $products = getProductsByCategory($category);
 
-  include('templates/products.php');
+  include('templates/header.php');
+  include('templates/category.php');
 ?>
