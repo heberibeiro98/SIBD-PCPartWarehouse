@@ -14,7 +14,7 @@
 
     if($checkemail = $stmt->fetch(PDO::FETCH_ASSOC)) {
       $id = $checkemail['Id'];
-      $stmt = $dbh->prepare('SELECT Nome FROM Cliente JOIN Conta ON Conta.Id = ?');
+      $stmt = $dbh->prepare('SELECT Nome FROM Conta Where Id = ?');
       $stmt->execute(array($id));
 
       if($checkid = $stmt->fetch(PDO::FETCH_ASSOC)) {

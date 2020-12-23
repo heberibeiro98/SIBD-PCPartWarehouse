@@ -16,10 +16,8 @@
     }
 
     else {
-      $ca = $dbh->prepare('INSERT INTO Conta(Email, Password) VALUES(? , ?)');
-      $ca->execute(array($email, $password));
-      $ca = $dbh->prepare('INSERT INTO Cliente(NIF, Nome, Num_telefone) VALUES(?, ?, ?)');
-      $ca->execute(array($nif, $nome, $num_telefone));
+      $ca = $dbh->prepare('INSERT INTO Conta(Email, Password, NIF, Nome, Num_telefone) VALUES(? , ?, ?, ?, ?)');
+      $ca->execute(array($email, $password, $nif, $nome, $num_telefone));
       header("Location: templates/login.php");
     }
   }

@@ -2,10 +2,11 @@
   require_once('config/init.php');
   require_once('database/ProductPage.php');
 
-  $category = 'GPU';
-  $numserie = 865514;
+  $numserie = $_GET['numserie'];
+  $category = $_GET['category'];
 
   $specs = getSepcsByProduct($category, $numserie);
 
+  include('templates/header.php');
   include('templates/product.php');
 ?>

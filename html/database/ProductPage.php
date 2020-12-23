@@ -5,43 +5,43 @@
     switch($category) {
 
       case 'Monitor':
-        $stmt = $dbh->prepare('SELECT * FROM Monitor JOIN Artigo ON Artigo.Num_serie = ? AND Monitor.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, Monitor WHERE Monitor.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'Rato':
-        $stmt = $dbh->prepare('SELECT * FROM Rato JOIN Artigo ON Artigo.Num_serie = ? AND Rato.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, Rato WHERE Rato.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'Teclado':
-        $stmt = $dbh->prepare('SELECT * FROM Teclado JOIN Artigo ON Artigo.Num_serie = ? AND Teclado.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, Teclado WHERE Teclado.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'Headphones':
-        $stmt = $dbh->prepare('SELECT * FROM Headphones JOIN Artigo ON Artigo.Num_serie = ? AND Headphones.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, Headphones WHERE Headphones.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'PSU':
-        $stmt = $dbh->prepare('SELECT * FROM PSU JOIN Artigo ON Artigo.Num_serie = ? AND PSU.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, PSU WHERE PSU.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'CPU':
-        $stmt = $dbh->prepare('SELECT * FROM CPU JOIN Artigo ON Artigo.Num_serie = ? AND CPU.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, CPU WHERE CPU.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'GPU':
-        $stmt = $dbh->prepare('SELECT * FROM GPU JOIN Artigo ON Artigo.Num_serie = ? AND GPU.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, GPU WHERE GPU.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'RAM ':
-        $stmt = $dbh->prepare('SELECT * FROM RAM JOIN Artigo ON Artigo.Num_serie = ? AND RAM.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, RAM WHERE RAM.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
       case 'Disco':
-        $stmt = $dbh->prepare('SELECT * FROM Disco JOIN Artigo ON Artigo.Num_serie = ? AND Disco.Num_serie = ?');
+        $stmt = $dbh->prepare('SELECT * FROM Artigo, Disco WHERE Disco.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
     }
 
-    $stmt->execute(array($numserie, $numserie));
+    $stmt->execute(array($numserie));
     return $stmt->fetchAll();
   }
  ?>
