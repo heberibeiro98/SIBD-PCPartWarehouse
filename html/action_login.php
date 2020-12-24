@@ -14,13 +14,15 @@
 
     if($checkemail = $stmt->fetch(PDO::FETCH_ASSOC)) {
       $id = $checkemail['Id'];
-      $stmt = $dbh->prepare('SELECT Nome FROM Conta Where Id = ?');
+      $stmt = $dbh->prepare('SELECT Nome, Email FROM Conta Where Id = ?');
       $stmt->execute(array($id));
 
       if($checkid = $stmt->fetch(PDO::FETCH_ASSOC)) {
-        $nomecliente = $checkid['Nome'];
+        $emailconta= $checkid['Email'];
+        $nomeconta = $checkid['Nome'];
         $_SESSION['loggedin'] = true;
-        $_SESSION['nomecliente'] = $nomecliente;
+        $_SESSION['emailconta'] = $emailconta;
+        $_SESSION['nomeconta'] = $nomeconta;
         header("Location: templates/homepage.php");
       }
 

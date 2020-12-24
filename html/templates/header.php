@@ -1,3 +1,9 @@
+<?php
+  if(!isset($_SESSION)) {
+    session_start();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -26,18 +32,16 @@
         <<?php
           if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         ?>
-          <a href="../action_logout.php">Terminar sessão</a>
-          <a href="">Perfil</a>
+          <a href="/action_logout.php">Terminar sessão</a>
+          <a href="/action_profile.php">Perfil</a>
           <a href="">Carrinho</a>
         <?php
           }
-
           else {
         ?>
-          <a href="login.php">Iniciar sessão</a>
-          <a href="register.php">Registar</a>
+          <a href="/templates/login.php">Iniciar sessão</a>
+          <a href="/templates/register.php">Registar</a>
           <a href="">Carrinho</a>
-
         <?php
           }
         ?>

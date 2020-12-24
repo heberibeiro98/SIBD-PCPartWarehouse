@@ -20,7 +20,7 @@ CREATE TABLE Conta(
   Email TEXT NOT NULL,
   Password TEXT NOT NULL,
   NIF INTEGER,
-  Nome TEXT NOT NULL,
+  Nome TEXT,
   Num_telefone NUMBER
 );
 
