@@ -19,16 +19,16 @@ CREATE TABLE Conta(
   Id INTEGER PRIMARY KEY AUTOINCREMENT,
   Email TEXT NOT NULL,
   Password TEXT NOT NULL,
-  NIF INTEGER,
-  Nome TEXT,
-  Num_telefone NUMBER
+  Nome TEXT NOT NULL,
+  Morada TEXT NOT NULL,
+  Num_telefone NUMBER,
+  NIF INTEGER
 );
 
 CREATE TABLE Encomenda(
-  Num_referencia INTEGER PRIMARY KEY,
+  Num_referencia INTEGER PRIMARY KEY AUTOINCREMENT,
   Data DATE,
   Metodo_pagamento TEXT,
-  Morada TEXT,
   Conta INTEGER REFERENCES Conta,
   Armazem INTEGER REFERENCES Armazem
 );
