@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/css/headerstyle.css">
-    <link rel="stylesheet" href="/css/categorypage.css">
+    <link rel="stylesheet" href="/css/general.css">
   </head>
   <body>
     <div class="navbar">
@@ -34,14 +34,13 @@
         ?>
           <a href="/action_logout.php">Terminar sessão</a>
           <a href="/action_profile.php">Perfil</a>
-          <a href="">Carrinho</a>
+          <a href="list_cart.php">Carrinho</a>
         <?php
           }
           else {
         ?>
           <a href="/templates/login.php">Iniciar sessão</a>
           <a href="/templates/register.php">Registar</a>
-          <a href="">Carrinho</a>
         <?php
           }
         ?>

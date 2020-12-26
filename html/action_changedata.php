@@ -34,7 +34,7 @@
       if(strcmp($pwcheck['Password'], $oldpw) == 0) {
         UpdateData($datafield, $param, $email);
       }
-
+      
       break;
   }
 
