@@ -10,7 +10,6 @@
             <p class="price">€<?=number_format($Artigo['Preço'], 2)?></p>
             <form action="action_add_to_cart.php" method="post">
               <input type="hidden" name="Num_serie" value="<?=$Artigo['Num_serie']?>">
-              <input type="hidden" name="Num_serie" value="<?=$Artigo['Preço']?>">
               <button>Adicionar ao carrinho</button>
             </form>
           </article>

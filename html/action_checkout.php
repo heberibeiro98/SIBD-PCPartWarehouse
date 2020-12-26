@@ -5,9 +5,10 @@
   if(!isset($_SESSION)) {
     session_start();
   }
-  
+
   $clientinfo = getClientInfo($_SESSION['emailconta']);
 
+
   include('templates/header.php');
-  include('templates/profile.php');
+  include('templates/checkout.php');
 ?>

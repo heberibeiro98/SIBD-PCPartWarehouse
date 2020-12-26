@@ -1,6 +1,4 @@
-<section id="Cart">
-  <?php if(isset($_SESSION['cart'])) {?>
-    <h2>Carrinho</h2>
+<section id="Order">
       <table>
         <tr>
           <td></td>
@@ -9,7 +7,7 @@
           <td>Quantidade</td>
         </tr>
         <?php $total = 0;
-          foreach ($_SESSION['cart'] as $Artigo) { ?>
+          foreach ($Artigos as $Artigo) { ?>
           <tr>
             <td><img src="/images/<?=$Artigo['Categoria']?>/<?=$Artigo['Modelo']?>.jpg"></td>
             <td><?=$Artigo['Marca']?> <?=$Artigo['Modelo']?></td>
@@ -20,11 +18,3 @@
         <?php } ?>
       </table>
   <h2>Total: €<?=number_format($total, 2)?></h2>
-  <form action="/action_checkout.php">
-    <input type="submit" value="Checkout">
-  </form>
-  <?php }
-  else { ?>
-  <h2>Carrinho vazio!</h2>
-<?php } ?>
-</section>

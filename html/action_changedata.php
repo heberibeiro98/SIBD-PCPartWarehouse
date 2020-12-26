@@ -15,13 +15,18 @@
       UpdateData($datafield, $param, $email);
       break;
 
-    case 'NIF':
-      $param = $_POST['nif'];
-      UpdateData($datafield, $param, $email);
+    case 'Morada':
+      $param = $_POST['morada'];
+      updateData($datafield, $param, $email);
       break;
 
     case 'Num_telefone':
-      $param = $_POST['Num_telefone'];
+      $param = $_POST['num_telefone'];
+      UpdateData($datafield, $param, $email);
+      break;
+
+    case 'NIF':
+      $param = $_POST['nif'];
       UpdateData($datafield, $param, $email);
       break;
 
@@ -34,7 +39,7 @@
       if(strcmp($pwcheck['Password'], $oldpw) == 0) {
         UpdateData($datafield, $param, $email);
       }
-      
+
       break;
   }
 

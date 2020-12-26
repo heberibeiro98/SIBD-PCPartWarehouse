@@ -10,9 +10,18 @@
 
   function getProductByNumSerie($numserie) {
     global $dbh;
-    
+
     $stmt = $dbh->prepare('SELECT * FROM Artigo WHERE Num_serie = ?');
     $stmt->execute(array($numserie));
+
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
+
+  function getProductByOrder($numref) {
+    global $dbh;
+
+    $stmt = $dbh->prepare('SELECT * FROM Artigo WHERE Encomenda = ?');
+    $stmt->execute(array($numref));
 
     return $stmt->fetchAll();
   }
