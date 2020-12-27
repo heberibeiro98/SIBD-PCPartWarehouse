@@ -5,8 +5,7 @@
   $category = $_GET['category'];
 
   $products = getProductsByCategory($category);
-  print_r($products);
-  die();
+
   include('templates/header.php');
   include('templates/category.php');
 ?>
