@@ -7,13 +7,18 @@
             case 'Monitor':
               foreach ($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Tamanho_ecra']?></h2>
-                  <h2><?=$spec['Resoluçao_ecra']?></h2>
-                  <h2><?=$spec['Refresh_rate']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Tamanho: <?=$spec['Tamanho_ecra']?></div>
+                    <div>Resolução: <?=$spec['Resoluçao_ecra']?></div>
+                    <div>Refresh rate: <?=$spec['Refresh_rate']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -21,13 +26,18 @@
             case 'Rato':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['DPI']?></h2>
-                  <h2><?=$spec['Iluminaçao']?></h2>
-                  <h2><?=$spec['Wireless']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>DPI: <?=$spec['DPI']?></div>
+                    <div>Iluminação: <?=$spec['Iluminaçao']?></div>
+                    <div>Wireless: <?=$spec['Wireless']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -35,12 +45,17 @@
             case 'Teclado':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Iluminaçao']?></h2>
-                  <h2><?=$spec['Wireless']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Iluminação: <?=$spec['Iluminaçao']?></div>
+                    <div>Wireless: <?=$spec['Wireless']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -48,12 +63,17 @@
             case 'Headphones':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Microfone']?></h2>
-                  <h2><?=$spec['Wireless']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Microfone: <?=$spec['Microfone']?></div>
+                    <div>Wireless: <?=$spec['Wireless']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -61,12 +81,17 @@
             case 'PSU':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Watts']?></h2>
-                  <h2><?=$spec['Fan_size']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Consumo: <?=$spec['Watts']?></div>
+                    <div>Tamanho ventoinha: <?=$spec['Fan_size']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -74,14 +99,19 @@
             case 'CPU':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Clock']?></h2>
-                  <h2><?=$spec['Num_cores']?></h2>
-                  <h2><?=$spec['Num_threads']?></h2>
-                  <h2><?=$spec['Mem_cache']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Clock: <?=$spec['Clock']?></div>
+                    <div>Número de núcleos: <?=$spec['Num_cores']?></div>
+                    <div>Número de threads: <?=$spec['Num_threads']?></div>
+                    <div>Memória cache: <?=$spec['Mem_cache']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -89,14 +119,19 @@
             case 'GPU':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Vram']?></h2>
-                  <h2><?=$spec['Vram_tipo']?></h2>
-                  <h2><?=$spec['Clock']?></h2>
-                  <h2><?=$spec['Dx_ver']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>VRAM: <?=$spec['Vram']?></div>
+                    <div>Tipo de VRAM: <?=$spec['Vram_tipo']?></div>
+                    <div>Clock: <?=$spec['Clock']?></div>
+                    <div>Versão DirectX: <?=$spec['Dx_ver']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -104,13 +139,18 @@
             case 'RAM':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Ram_tipo']?></h2>
-                  <h2><?=$spec['Clock']?></h2>
-                  <h2><?=$spec['Qtdd_memoria']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Tipo: <?=$spec['Ram_tipo']?></div>
+                    <div>Clock: <?=$spec['Clock']?></div>
+                    <div>Quantidade memória: <?=$spec['Qtdd_memoria']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;
@@ -118,12 +158,17 @@
             case 'Disco':
               foreach($specs as $spec) { ?>
                 <article>
-                  <h2><?=$spec['Marca']?></h2>
-                  <h2><?=$spec['Modelo']?></h2>
+                  <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
-                  <h2><?=$spec['Tipo_disco']?></h2>
-                  <h2><?=$spec['Memoria']?></h2>
-                  <span class="price">€<?=$spec['Preço']?></span>
+                  <div class="specs">
+                    <div>Tipo: <?=$spec['Tipo_disco']?></div>
+                    <div>Memória: <?=$spec['Memoria']?></div>
+                  </div>
+                  <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
+                  <form action="action_add_to_cart.php" method="post">
+                    <input type="hidden" name="Num_serie" value="<?=$numserie?>">
+                    <button>Adicionar ao carrinho</button>
+                  </form>
                 </article>
               <?php }
               break;

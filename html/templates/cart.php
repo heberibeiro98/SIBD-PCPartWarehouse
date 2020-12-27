@@ -15,7 +15,7 @@
             <td><?=$Artigo['Marca']?> <?=$Artigo['Modelo']?></td>
             <td>€<?=number_format($Artigo['Preço'], 2)?></td>
             <td><?=$Artigo['Quantidade']?></td>
-            <?php $total += $Artigo['Preço']; ?>
+            <?php $total += ($Artigo['Preço']*$Artigo['Quantidade']); ?>
           </tr>
         <?php } ?>
       </table>

@@ -12,8 +12,9 @@
             <td><img src="/images/<?=$Artigo['Categoria']?>/<?=$Artigo['Modelo']?>.jpg"></td>
             <td><?=$Artigo['Marca']?> <?=$Artigo['Modelo']?></td>
             <td>€<?=number_format($Artigo['Preço'], 2)?></td>
-            <td><?=$Artigo['Quantidade']?></td>
-            <?php $total += $Artigo['Preço']; ?>
+            <?php $quantidade = GetProductQuantity($Artigo['Num_serie'], $numref); ?>
+            <td><?=$quantidade['Qtdd']?></td>
+            <?php $total += ($Artigo['Preço']*$quantidade['Qtdd']); ?>
           </tr>
         <?php } ?>
       </table>

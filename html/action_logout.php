@@ -4,6 +4,6 @@
 
   if(isset($_SESSION) && $_SESSION['loggedin'] == true) {
     session_destroy();
-    header("Location: templates/homepage.php");
+    header("Location: homepage.php");
   }
 ?>

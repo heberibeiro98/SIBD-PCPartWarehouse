@@ -23,7 +23,7 @@
         $_SESSION['loggedin'] = true;
         $_SESSION['emailconta'] = $emailconta;
         $_SESSION['nomeconta'] = $nomeconta;
-        header("Location: templates/homepage.php");
+        header("Location: homepage.php");
       }
 
       else {

@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="/css/productlist.css">
     <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/encomendas.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/homepage.css">
   </head>
   <body>
     <div class="navbar">
@@ -34,7 +36,7 @@
         </div>
       </div>
       <div class="rightNav">
-        <<?php
+        <?php
           if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         ?>
           <a href="/action_logout.php">Terminar sessão</a>
