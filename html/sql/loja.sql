@@ -310,7 +310,7 @@ INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(280606, 'MSI', 'GeForce GTX 1650 D6 Ventus XS 4G OCV2', 159.90, 'Placa gráfica', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(553141, 'Asus', 'Radeon RX 6900 XT 16GB GDDR6', 1099.00, 'Placa gráfica', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(839520, 'Asus', 'ROG Strix GeForce RTX 3060 Ti 8GB GDDR6 OC', 614.30, 'Placa gráfica', 1);
-INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(307180, 'Asus', 'RGeForce GTX 1650 TUF Gaming 4GB OC', 160.90, 'Placa gráfica', 1);
+INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(307180, 'Asus', 'GeForce GTX 1650 TUF Gaming 4GB OC', 160.90, 'Placa gráfica', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(832049, 'XFX', 'Radeon RX 6900 XT Speedster MERC 319 Ultra Gaming 16GB', 1199.00, 'Placa gráfica', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(401894, 'XFX', 'Radeon RX 5600 XT 14Gbps 6GB THICC II Pro', 325.90, 'Placa gráfica', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(632725, 'MSI', 'Radeon RX 5700 XT Gaming X 8G', 449.90, 'Placa gráfica', 1);

@@ -35,6 +35,11 @@
           <a href="/list_products.php?category=Disco">Discos de armazenamento</a>
         </div>
       </div>
+      <div class="centerNav">
+        <a href="homepage.php">
+          <img src="/images/smol_logo.png" alt="PCPart Warehouse logo small">
+        </a>
+      </div>
       <div class="rightNav">
         <?php
           if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
