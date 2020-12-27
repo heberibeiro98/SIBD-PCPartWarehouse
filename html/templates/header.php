@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/encomendas.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/font-awesome.min.css">
   </head>
   <body>
     <div class="navbar">

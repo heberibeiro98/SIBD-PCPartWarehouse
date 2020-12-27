@@ -14,7 +14,7 @@
     $stmt = $dbh->prepare('SELECT * FROM Artigo WHERE Num_serie = ?');
     $stmt->execute(array($numserie));
 
-    return $stmt->fetchAll();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
   function getProductByOrder($numref) {
