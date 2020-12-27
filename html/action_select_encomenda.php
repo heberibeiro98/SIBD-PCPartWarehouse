@@ -11,6 +11,7 @@
 
   $Artigos = getProductByOrder($numref);
 
+  $title = 'Encomenda #' . $numref;
   include('templates/header.php');
   include('templates/encomenda.php');
 ?>

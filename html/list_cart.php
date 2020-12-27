@@ -5,6 +5,8 @@
     session_start();
   }
 
+  $title = 'Carrinho';
+
   include('templates/header.php');
   include('templates/cart.php');
 ?>

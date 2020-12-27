@@ -8,6 +8,7 @@
 
   $encomendas = getOrders($_SESSION['emailconta']);
 
+  $title = "Encomendas";
   include('templates/header.php');
   include('templates/encomendas.php');
 ?>
