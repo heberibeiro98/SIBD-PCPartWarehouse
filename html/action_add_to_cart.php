@@ -14,6 +14,8 @@
 
   $artigo = getProductByNumSerie($numserie);
 
+  
+
   if($_SESSION['cart'][$numserie] == null) {
     $artigo_cart = array(
       'Num_serie' => $numserie,

@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS CPU;
 DROP TABLE IF EXISTS GPU;
 DROP TABLE IF EXISTS RAM;
 DROP TABLE IF EXISTS Disco;
+DROP TABLE IF EXISTS Quantidade;
 DROP TABLE IF EXISTS Stock;
 DROP TABLE IF EXISTS Artigo;
 DROP TABLE IF EXISTS Encomenda;
@@ -37,6 +38,13 @@ CREATE TABLE Armazem(
   Id INTEGER PRIMARY KEY,
   Morada TEXT NOT NULL,
   Num_telefone TEXT NOT NULL
+);
+
+CREATE TABLE Quantidade(
+  Artigo INTEGER REFERENCES Artigo,
+  Encomenda INTEGER REFERENCES Encomenda,
+  Qtdd INTEGER CHECK(Qtdd > 0),
+  PRIMARY KEY(Artigo, Encomenda)
 );
 
 CREATE TABLE Artigo(
@@ -392,3 +400,141 @@ INSERT INTO DISCO VALUES(534533, 'SSD', '500GB');
 INSERT INTO DISCO VALUES(266109, 'SSD', '4TB');
 
 ----------------------------------------------------------DISCO------------------------------------------------------------
+
+
+---------------------------------------------------STOCK---------------------------------------------------------------------
+
+-----------Monitores------------
+INSERT INTO Stock(61867, 1, 4);
+INSERT INTO Stock(892719, 1, 4);
+INSERT INTO Stock(915758, 1, 4);
+INSERT INTO Stock(393303, 1, 4);
+INSERT INTO Stock(207180, 1, 4);
+INSERT INTO Stock(913012, 1, 4);
+INSERT INTO Stock(673569, 1, 4);
+INSERT INTO Stock(874538, 1, 4);
+INSERT INTO Stock(837237, 1, 4);
+INSERT INTO Stock(138855, 1, 4);
+INSERT INTO Stock(925794, 1, 4);
+INSERT INTO Stock(576713, 1, 4);
+-----------Monitores------------
+
+-------------Ratos--------------
+INSERT INTO Stock(025986, 1, 4);
+INSERT INTO Stock(349864, 1, 4);
+INSERT INTO Stock(306304, 1, 4);
+INSERT INTO Stock(467634, 1, 4);
+INSERT INTO Stock(889496, 1, 4);
+INSERT INTO Stock(657198, 1, 4);
+INSERT INTO Stock(577452, 1, 4);
+INSERT INTO Stock(220616, 1, 4);
+INSERT INTO Stock(996707, 1, 4);
+INSERT INTO Stock(757778, 1, 4);
+INSERT INTO Stock(368749, 1, 4);
+INSERT INTO Stock(466851, 1, 4);
+-------------Ratos--------------
+
+-----------Teclados-------------
+INSERT INTO Stock(071211, 1, 4);
+INSERT INTO Stock(612069, 1, 4);
+INSERT INTO Stock(211896, 1, 4);
+INSERT INTO Stock(249278, 1, 4);
+INSERT INTO Stock(155486, 1, 4);
+INSERT INTO Stock(269545, 1, 4);
+INSERT INTO Stock(458738, 1, 4);
+INSERT INTO Stock(326558, 1, 4);
+INSERT INTO Stock(745331, 1, 4);
+INSERT INTO Stock(136283, 1, 4);
+INSERT INTO Stock(798268, 1, 4);
+INSERT INTO Stock(555655, 1, 4);
+-----------Teclados-------------
+
+----------Headphones------------
+INSERT INTO Stock(030707, 1, 4);
+INSERT INTO Stock(526137, 1, 4);
+INSERT INTO Stock(941430, 1, 4);
+INSERT INTO Stock(393954, 1, 4);
+INSERT INTO Stock(591609, 1, 4);
+INSERT INTO Stock(555063, 1, 4);
+INSERT INTO Stock(749201, 1, 4);
+INSERT INTO Stock(228054, 1, 4);
+INSERT INTO Stock(335406, 1, 4);
+INSERT INTO Stock(979532, 1, 4);
+INSERT INTO Stock(212601, 1, 4);
+INSERT INTO Stock(665457, 1, 4);
+----------Headphones------------
+
+--------------PSU---------------
+INSERT INTO Stock(106808, 1, 4);
+INSERT INTO Stock(069730, 1, 4);
+INSERT INTO Stock(542967, 1, 4);
+INSERT INTO Stock(917454, 1, 4);
+INSERT INTO Stock(401371, 1, 4);
+INSERT INTO Stock(616291, 1, 4);
+INSERT INTO Stock(698408, 1, 4);
+INSERT INTO Stock(214206, 1, 4);
+INSERT INTO Stock(249482, 1, 4);
+INSERT INTO Stock(559841, 1, 4);
+INSERT INTO Stock(530828, 1, 4);
+INSERT INTO Stock(152266, 1, 4);
+--------------PSU---------------
+
+--------------CPU---------------
+INSERT INTO Stock(127522, 1, 4);
+INSERT INTO Stock(686590, 1, 4);
+INSERT INTO Stock(750502, 1, 4);
+INSERT INTO Stock(189519, 1, 4);
+INSERT INTO Stock(957103, 1, 4);
+INSERT INTO Stock(146142, 1, 4);
+INSERT INTO Stock(986722, 1, 4);
+INSERT INTO Stock(540880, 1, 4);
+INSERT INTO Stock(152664, 1, 4);
+INSERT INTO Stock(647206, 1, 4);
+INSERT INTO Stock(802660, 1, 4);
+INSERT INTO Stock(252692, 1, 4);
+--------------PSU---------------
+
+--------------GPU---------------
+INSERT INTO Stock(865514, 1, 4);
+INSERT INTO Stock(955710, 1, 4);
+INSERT INTO Stock(626252, 1, 4);
+INSERT INTO Stock(681755, 1, 4);
+INSERT INTO Stock(471188, 1, 4);
+INSERT INTO Stock(280606, 1, 4);
+INSERT INTO Stock(553141, 1, 4);
+INSERT INTO Stock(839520, 1, 4);
+INSERT INTO Stock(307180, 1, 4);
+INSERT INTO Stock(832049, 1, 4);
+INSERT INTO Stock(401894, 1, 4);
+INSERT INTO Stock(632725, 1, 4);
+--------------GPU---------------
+
+--------------RAM---------------
+INSERT INTO Stock(206622, 1, 4);
+INSERT INTO Stock(415953, 1, 4);
+INSERT INTO Stock(633290, 1, 4);
+INSERT INTO Stock(900056, 1, 4);
+INSERT INTO Stock(148627, 1, 4);
+INSERT INTO Stock(697135, 1, 4);
+INSERT INTO Stock(386516, 1, 4);
+INSERT INTO Stock(388607, 1, 4);
+INSERT INTO Stock(753194, 1, 4);
+INSERT INTO Stock(537202, 1, 4);
+INSERT INTO Stock(305956, 1, 4);
+INSERT INTO Stock(493318, 1, 4);
+--------------RAM---------------
+
+-------------Discos-------------
+INSERT INTO Stock(043050, 1, 4);
+INSERT INTO Stock(227731, 1, 4);
+INSERT INTO Stock(012394, 1, 4);
+INSERT INTO Stock(844191, 1, 4);
+INSERT INTO Stock(328361, 1, 4);
+INSERT INTO Stock(477079, 1, 4);
+INSERT INTO Stock(856277, 1, 4);
+INSERT INTO Stock(207516, 1, 4);
+INSERT INTO Stock(303160, 1, 4);
+INSERT INTO Stock(562859, 1, 4);
+INSERT INTO Stock(534533, 1, 4);
+INSERT INTO Stock(266109, 1, 4);
+-------------Discos-------------

@@ -96,7 +96,7 @@
               <?php }
               break;
 
-            case 'CPU':
+            case 'Processador':
               foreach($specs as $spec) { ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
@@ -116,7 +116,7 @@
               <?php }
               break;
 
-            case 'GPU':
+            case 'Placa gráfica':
               foreach($specs as $spec) { ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>

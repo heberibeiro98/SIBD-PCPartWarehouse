@@ -24,15 +24,15 @@
         $stmt = $dbh->prepare('SELECT * FROM Artigo, PSU WHERE PSU.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
-      case 'CPU':
+      case 'Processador':
         $stmt = $dbh->prepare('SELECT * FROM Artigo, CPU WHERE CPU.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
-      case 'GPU':
+      case 'Placa gráfica':
         $stmt = $dbh->prepare('SELECT * FROM Artigo, GPU WHERE GPU.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
-      case 'RAM ':
+      case 'RAM':
         $stmt = $dbh->prepare('SELECT * FROM Artigo, RAM WHERE RAM.Num_serie = Artigo.Num_serie AND Artigo.Num_serie = ?');
         break;
 
