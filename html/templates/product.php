@@ -13,6 +13,12 @@
                     <div>Tamanho: <?=$spec['Tamanho_ecra']?></div>
                     <div>Resolução: <?=$spec['Resoluçao_ecra']?></div>
                     <div>Refresh rate: <?=$spec['Refresh_rate']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -32,6 +38,12 @@
                     <div>DPI: <?=$spec['DPI']?></div>
                     <div>Iluminação: <?=$spec['Iluminaçao']?></div>
                     <div>Wireless: <?=$spec['Wireless']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -50,6 +62,12 @@
                   <div class="specs">
                     <div>Iluminação: <?=$spec['Iluminaçao']?></div>
                     <div>Wireless: <?=$spec['Wireless']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -68,6 +86,12 @@
                   <div class="specs">
                     <div>Microfone: <?=$spec['Microfone']?></div>
                     <div>Wireless: <?=$spec['Wireless']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -86,6 +110,12 @@
                   <div class="specs">
                     <div>Consumo: <?=$spec['Watts']?></div>
                     <div>Tamanho ventoinha: <?=$spec['Fan_size']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -106,6 +136,12 @@
                     <div>Número de núcleos: <?=$spec['Num_cores']?></div>
                     <div>Número de threads: <?=$spec['Num_threads']?></div>
                     <div>Memória cache: <?=$spec['Mem_cache']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -126,6 +162,12 @@
                     <div>Tipo de VRAM: <?=$spec['Vram_tipo']?></div>
                     <div>Clock: <?=$spec['Clock']?></div>
                     <div>Versão DirectX: <?=$spec['Dx_ver']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -145,6 +187,12 @@
                     <div>Tipo: <?=$spec['Ram_tipo']?></div>
                     <div>Clock: <?=$spec['Clock']?></div>
                     <div>Quantidade memória: <?=$spec['Qtdd_memoria']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">
@@ -163,6 +211,12 @@
                   <div class="specs">
                     <div>Tipo: <?=$spec['Tipo_disco']?></div>
                     <div>Memória: <?=$spec['Memoria']?></div>
+                    <?php if($quantidade['Quantidade'] > 0) { ?>
+                      <p>Disponível em stock: <i class="fa fa-check" style="color: green"></i></p>
+                    <?php }
+                    else { ?>
+                      <p>Disponível em stock: <i class="fa fa-times" style="color: red"></i></p>
+                    <?php } ?>
                   </div>
                   <span class="price">PREÇO: &nbsp; € <?=number_format($spec['Preço'], 2)?></span>
                   <form action="action_add_to_cart.php" method="post">

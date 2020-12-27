@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/encomendas.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/font-awesome.min.css">
   </head>
   <body>
     <div class="navbar">
@@ -34,6 +35,11 @@
           <a href="/list_products.php?category=PSU">Fontes de alimentação</a>
           <a href="/list_products.php?category=Disco">Discos de armazenamento</a>
         </div>
+      </div>
+      <div class="centerNav">
+        <a href="homepage.php">
+          <img src="/images/smol_logo.png" alt="PCPart Warehouse logo small">
+        </a>
       </div>
       <div class="rightNav">
         <?php
