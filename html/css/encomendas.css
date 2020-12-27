@@ -1,0 +1,42 @@
+#Orders table {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+#Orders tr:hover {
+  background: #ddd;
+}
+
+#Orders td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  text-decoration: none;
+  padding-right: 5px;
+  text-align: center;
+}
+
+#Orders td a {
+  display: block;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: black;
+}
+
+#Order table {
+  width: 100%;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#Order table td {
+  text-align: center;
+}
+
+#Order table img {
+  width: 2em;
+}
+
+#Cart table td:nth-child(-n+2) {
+  text-align: left;
+}
