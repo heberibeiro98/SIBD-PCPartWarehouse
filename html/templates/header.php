@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/encomendas.css">
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/homepage.css">
   </head>
   <body>
     <div class="navbar">
