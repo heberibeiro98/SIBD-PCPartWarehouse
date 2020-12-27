@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/encomendas.css">
     <link rel="stylesheet" href="/css/product.css">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/fontawesome/css/font-awesome.min.css">
   </head>
   <body>
     <div class="navbar">
@@ -36,7 +37,7 @@
         </div>
       </div>
       <div class="centerNav">
-        <a href="homepage.php">
+        <a href="/homepage.php">
           <img src="/images/smol_logo.png" alt="PCPart Warehouse logo small">
         </a>
       </div>
@@ -58,3 +59,4 @@
         ?>
       </div>
     </div>
+    <br class="hdr_break">
