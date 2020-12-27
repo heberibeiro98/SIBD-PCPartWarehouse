@@ -42,6 +42,6 @@
     }
 
     $stmt->execute(array($numserie));
-    return $stmt->fetchAll();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
   }
  ?>

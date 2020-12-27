@@ -8,7 +8,7 @@
 
   $clientinfo = getClientInfo($_SESSION['emailconta']);
 
-
+  $title = 'Checkout';
   include('templates/header.php');
   include('templates/checkout.php');
 ?>

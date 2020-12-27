@@ -6,9 +6,10 @@
   $numserie = $_GET['numserie'];
   $category = $_GET['category'];
 
-  $specs = getSepcsByProduct($category, $numserie);
+  $spec = getSepcsByProduct($category, $numserie);
   $quantidade = GetStockQuantity($numserie, 1);
 
+  $title = $spec['Marca'] . ' ' . $spec['Modelo'];
   include('templates/header.php');
   include('templates/product.php');
 ?>

@@ -4,8 +4,7 @@
         <?php
           switch($category) {
 
-            case 'Monitor':
-              foreach ($specs as $spec) { ?>
+            case 'Monitor': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -26,11 +25,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'Rato':
-              foreach($specs as $spec) { ?>
+            case 'Rato': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -51,11 +48,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'Teclado':
-              foreach($specs as $spec) { ?>
+            case 'Teclado': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -75,11 +70,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'Headphones':
-              foreach($specs as $spec) { ?>
+            case 'Headphones': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -99,11 +92,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'PSU':
-              foreach($specs as $spec) { ?>
+            case 'PSU': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -123,11 +114,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'Processador':
-              foreach($specs as $spec) { ?>
+            case 'Processador': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -149,11 +138,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'Placa gráfica':
-              foreach($specs as $spec) { ?>
+            case 'Placa gráfica': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -175,11 +162,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'RAM':
-              foreach($specs as $spec) { ?>
+            case 'RAM': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -200,11 +185,9 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
+              <?php break;
 
-            case 'Disco':
-              foreach($specs as $spec) { ?>
+            case 'Disco': ?>
                 <article>
                   <div class="product-name"><?=$spec['Marca']?> <?=$spec['Modelo']?><hr></div>
                   <img src="/images/<?=$spec['Categoria']?>/<?=$spec['Modelo']?>.jpg">
@@ -224,9 +207,8 @@
                     <button>Adicionar ao carrinho</button>
                   </form>
                 </article>
-              <?php }
-              break;
-          } ?>
+              <?php break;
+              } ?>
         </div>
     </body>
   </section>

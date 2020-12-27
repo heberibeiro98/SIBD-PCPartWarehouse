@@ -1,4 +1,6 @@
-<?php include("header.php"); ?>
+<?php
+  $title = 'Registo';
+  include("header.php"); ?>
   <section id="Register">
     <body>
         <form action="../action_register.php" method="post">

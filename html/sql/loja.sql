@@ -134,7 +134,7 @@ INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(892719, 'AOC', 'U32E2N', 389.90, 'Monitor', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(915758, 'Gigabyte', 'M27F Gaming', 259.90, 'Monitor', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(393303, 'LG', '32UN500-W', 364.90, 'Monitor', 1);
-INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(207180, 'HP', 'HP P24h G4', 149.90, 'Monitor', 1);
+INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(207180, 'HP', 'P24h G4', 149.90, 'Monitor', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(913012, 'Asus', 'VZ249HEG1R', 159.90, 'Monitor', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(673569, 'Asus', 'VP229HE', 99.90, 'Monitor', 1);
 INSERT INTO Artigo(Num_serie, Marca, Modelo, Preço, Categoria, Armazem) VALUES(874538, 'Asus', 'ROG SWIFT PG259QN', 699.90, 'Monitor', 1);

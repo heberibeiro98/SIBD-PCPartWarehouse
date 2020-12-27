@@ -1,4 +1,6 @@
-<?php include("header.php"); ?>
+<?php
+  $title = 'Iniciar sessão';
+  include("header.php"); ?>
   <section id="Login">
     <body>
         <form action="../action_login.php" method="post">
