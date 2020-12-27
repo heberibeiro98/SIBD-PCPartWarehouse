@@ -12,4 +12,5 @@
   $title = $spec['Marca'] . ' ' . $spec['Modelo'];
   include('templates/header.php');
   include('templates/product.php');
+  include('templates/footer.php');
 ?>

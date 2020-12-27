@@ -14,4 +14,5 @@
   $title = 'Encomenda #' . $numref;
   include('templates/header.php');
   include('templates/encomenda.php');
+  include('templates/footer.php');
 ?>

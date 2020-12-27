@@ -9,4 +9,5 @@
   $title = 'Alterar ' . $data;
   include('templates/header.php');
   include('templates/changedata.php');
+  include('templates/footer.php');
 ?>

@@ -9,4 +9,5 @@
   $title = 'Categoria: ' . $category;
   include('templates/header.php');
   include('templates/category.php');
+  include('templates/footer.php')
 ?>

@@ -11,4 +11,5 @@
   $title = 'Checkout';
   include('templates/header.php');
   include('templates/checkout.php');
+  include('templates/footer.php');
 ?>
