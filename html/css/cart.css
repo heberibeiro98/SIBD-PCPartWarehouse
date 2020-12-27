@@ -1,0 +1,17 @@
+#Cart table {
+  width: 100%;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+#Cart table td {
+  text-align: center;
+}
+
+#Cart table img {
+  width: 2em;
+}
+
+#Cart table td:nth-child(-n+2) {
+  text-align: left;
+}

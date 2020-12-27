@@ -7,12 +7,16 @@
         $stmt = $dbh->prepare('UPDATE Conta SET Nome = ? WHERE Email = ?');
         break;
 
-      case 'NIF':
-        $stmt = $dbh->prepare('UPDATE Conta SET NIF = ? WHERE Email = ?');
+      case 'Morada':
+        $stmt = $dbh->prepare('UPDATE Conta SET Morada = ? WHERE Email = ?');
         break;
 
       case 'Num_telefone':
         $stmt = $dbh->prepare('UPDATE Conta SET Num_telefone = ? WHERE Email = ?');
+        break;
+
+      case 'NIF':
+        $stmt = $dbh->prepare('UPDATE Conta SET NIF = ? WHERE Email = ?');
         break;
 
       case 'Password':

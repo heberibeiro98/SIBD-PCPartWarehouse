@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-  <section id="login">
+  <section id="Login">
     <body>
         <form action="../action_login.php" method="post">
           <input type="text" name="email" placeholder="Email">

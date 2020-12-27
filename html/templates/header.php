@@ -2,6 +2,9 @@
   if(!isset($_SESSION)) {
     session_start();
   }
+
+  echo $_SESSION['message'];
+  unset($_SESSION['message']);
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +13,10 @@
     <meta charset="utf-8">
     <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="/css/headerstyle.css">
-    <link rel="stylesheet" href="/css/categorypage.css">
+    <link rel="stylesheet" href="/css/productlist.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="/css/encomendas.css">
+    <link rel="stylesheet" href="/css/product.css">
   </head>
   <body>
     <div class="navbar">
@@ -29,19 +35,18 @@
         </div>
       </div>
       <div class="rightNav">
-        <<?php
+        <?php
           if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         ?>
           <a href="/action_logout.php">Terminar sessão</a>
           <a href="/action_profile.php">Perfil</a>
-          <a href="">Carrinho</a>
+          <a href="/list_cart.php">Carrinho</a>
         <?php
           }
           else {
         ?>
           <a href="/templates/login.php">Iniciar sessão</a>
           <a href="/templates/register.php">Registar</a>
-          <a href="">Carrinho</a>
         <?php
           }
         ?>

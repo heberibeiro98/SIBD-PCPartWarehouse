@@ -4,11 +4,14 @@
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
-              <h2><?=$Artigo['Marca']?></h2>
-              <h3><?=$Artigo['Modelo']?></h3>
+              <h3><?=$Artigo['Marca']?> <?=$Artigo['Modelo']?></h2>
               <img src="./images/<?=$Artigo['Categoria']?>/<?=$Artigo['Modelo']?>.jpg">
-              <span class="price">€<?=$Artigo['Preço']?></span>
             </a>
+            <p class="price">€<?=number_format($Artigo['Preço'], 2)?></p>
+            <form action="action_add_to_cart.php" method="post">
+              <input type="hidden" name="Num_serie" value="<?=$Artigo['Num_serie']?>">
+              <button>Adicionar ao carrinho</button>
+            </form>
           </article>
         <?php } ?>
       </section>

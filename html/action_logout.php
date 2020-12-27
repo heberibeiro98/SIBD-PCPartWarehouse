@@ -3,7 +3,7 @@
   require_once('config/init.php');
 
   if(isset($_SESSION) && $_SESSION['loggedin'] == true) {
-    $_SESSION['loggedin'] = false;
+    session_destroy();
     header("Location: templates/homepage.php");
   }
 ?>
