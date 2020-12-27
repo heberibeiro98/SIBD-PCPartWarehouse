@@ -47,7 +47,7 @@
         ?>
           <a href="/action_logout.php">Terminar sessão</a>
           <a href="/action_profile.php">Perfil</a>
-          <a href="/list_cart.php">Carrinho</a>
+          <a href="/list_cart.php"><i class="fa fa-shopping-cart" style="font-size:24px"></i>[<?= GetNumberOfItemsCart() ?>]</a>
         <?php
           }
           else {
@@ -59,3 +59,4 @@
         ?>
       </div>
     </div>
+    <br class="hdr_break">
