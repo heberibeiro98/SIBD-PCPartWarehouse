@@ -6,6 +6,12 @@
     session_start();
   }
 
+  if($_SESSION['loggedin'] != true) {
+    $_SESSION['message'] = 'Deve fazer login para adicionar produtos ao seu carrinho!';
+    header('Location: templates/login.php');
+    exit();
+  }
+
   if (!isset($_SESSION['cart'])) {
     $_SESSION['cart'] = array();
   }
