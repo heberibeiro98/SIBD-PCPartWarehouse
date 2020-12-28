@@ -11,8 +11,8 @@
 
 ----------------------------------------------------------------------------------
 
-* CSS no perfil - Héber
-* CSS registo e login - João
+* CSS no perfil - Héber - done
+* CSS registo e login - João - done
 * Acrescentar remover items e limpar carrinho - Héber
 * CSS no carrinho - Héber
 * CSS nas alteraçoes de dados do perfil - João

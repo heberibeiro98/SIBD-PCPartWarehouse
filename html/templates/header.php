@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/css/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/login-register.css">
+    <link rel="stylesheet" href="/css/profile.css">
   </head>
   <body>
     <div class="page_wrapper">
