@@ -7,7 +7,6 @@
 #info {
   margin-bottom: 15px;
   padding-left: 5px;
-  width: 400px;
   font-family: sans-serif;
 }
 
@@ -16,7 +15,8 @@
 }
 
 #info h3 {
-  margin-bottom: 8px;
+  margin: 2em 0 1em 0;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid #1f1f14;
   position: relative;
   color: #e54e2e;
@@ -48,64 +48,78 @@
 }
 
 #info .options li {
-  padding-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  margin: 0.7em 1em 0em 1em;
+  background-color: #e54e2e;
+  border-radius: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+#info .options li:hover {
+  background-color: #222222;
+  color: #e54e2e;
+  opacity: 0.9;
 }
 
 #info .options a {
   font-size: 20px;
   margin-bottom: 1px;
-  color: #000033;
+  color: #222222;
   text-decoration: none;
   text-decoration-color: #222222;
-  padding-left: 1em;
-  padding-right: 1em;
-  background-color: #e54e2e;
-  border-radius: 2em;
-  font-weight: bold;
+  padding: 0.1em 1em;
 }
 
 #info .options a:hover {
-  width: 50%;
-  align-self: flex-end;
-  background-color: #222222;
   color: #e54e2e;
-  font-weight: bold;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 2em;
 }
 
-#info .orders a{
-  font-size: 20px;
-  margin-bottom: 1px;
-  color: #000033;
-  text-decoration: none;
-  padding-left: 1em;
-  padding-right: 1em;
+#info .orders div {
+  display: flex;
+  flex-direction: column;
+  margin: 0.7em 1em 0em 1em;
   background-color: #e54e2e;
   border-radius: 2em;
+  text-align: center;
   font-weight: bold;
+}
+
+#info .orders div:hover {
+  background-color: #222222;
+  color: #e54e2e;
+  opacity: 0.9;
+}
+
+#info .orders a {
+  font-size: 20px;
+  margin-bottom: 1px;
+  color: #222222;
+  text-decoration: none;
+  text-decoration-color: #222222;
+  padding: 0.1em 1em;
 }
 
 #info .orders a:hover {
-  width: 50%;
-  align-self: flex-end;
-  background-color: #222222;
   color: #e54e2e;
-  font-weight: bold;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 2em;
 }
 
+#info .orders {
+  margin-bottom: 4em;
+}
+
+
 #changedata{
-  width: 70%;
+  width: 68%;
   float: right;
   padding-right: 30px;
 }
 
 #changedata h3 {
-  margin-bottom: 8px;
+  font-family: sans-serif;
+  margin: 2em 0 1em 0;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid #1f1f14;
   position: relative;
   color: #e54e2e;
