@@ -28,3 +28,4 @@
   <h2>Carrinho vazio!</h2>
 <?php } ?>
 </section>
+</div>

@@ -14,4 +14,5 @@
         </form>
     </body>
   </section>
-</html>
+</div>
+<?php include('footer.php'); ?>

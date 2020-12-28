@@ -9,7 +9,8 @@
   $clientinfo = getClientInfo($_SESSION['emailconta']);
 
   $title = 'Perfil de utilizador';
-  
+
   include('templates/header.php');
   include('templates/profile.php');
+  include('templates/footer.php');
 ?>

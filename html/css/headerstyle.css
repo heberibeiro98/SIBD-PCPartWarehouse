@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.page_wrapper {
+  min-height: 85vh;
+}
+
 .navbar{
   display: grid;
   grid-template-columns: [dropbtn-start] 2fr [dropbtn-end_centerNav-start] 4fr [centerNav-end_rightNav-start] 2fr [rightNav-end_pg-lmt];

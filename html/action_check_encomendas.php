@@ -11,4 +11,5 @@
   $title = "Encomendas";
   include('templates/header.php');
   include('templates/encomendas.php');
+  include('templates/footer.php');
 ?>

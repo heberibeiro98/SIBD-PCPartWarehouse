@@ -1,0 +1,16 @@
+.footer{
+  width: 100%;
+  height: 15vh;
+  background-color: #e54e2e;
+  color: #222222;
+  font-family: sans-serif;
+  padding: 1em;
+  font-size: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contactos_ttl {
+  font-weight: bold;
+}
