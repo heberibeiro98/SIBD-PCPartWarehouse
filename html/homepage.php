@@ -8,7 +8,7 @@
   include("templates/header.php");
 ?>
 
-<a href="action_homepage.php">
+<a href="homepage.php">
   <img src="/images/logo.png" id="logo" alt="PCPart Warehouse logo">
 </a>
 <h1>Os nossos produtos</h1>

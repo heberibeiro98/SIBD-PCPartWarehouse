@@ -9,7 +9,7 @@
           </tr>
           <?php foreach($encomendas as $encomenda) { ?>
             <tr>
-              <td><a href="/action_select_encomenda.php?numref=<?=$encomenda['Num_referencia']?>"><?=$encomenda['Num_referencia']?></a></td>
+              <td><a href="/action_select_encomenda.php?numref=<?=$encomenda['Num_referencia']?>">#<?=$encomenda['Num_referencia']?></a></td>
               <td><a href="/action_select_encomenda.php?numref=<?=$encomenda['Num_referencia']?>"><?=$encomenda['Data']?></td>
               <td><a href="/action_select_encomenda.php?numref=<?=$encomenda['Num_referencia']?>"><?=$encomenda['Metodo_pagamento']?></td>
             </tr>

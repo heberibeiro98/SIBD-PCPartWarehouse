@@ -3,6 +3,10 @@
   require_once('database/ProductList.php');
   require_once('database/Stock.php');
 
+  if(!isset($_SESSION)) {
+    session_start();
+  }
+
   $category = $_GET['category'];
   $search_name = $_GET['search-name'];
   $search_min = $_GET['search-min-price'];
