@@ -1,7 +1,7 @@
 <?php
   $title = 'Registo';
   include("header.php"); ?>
-  <section id="Register">
+  <section id="Login-Register">
     <body>
         <form action="../action_register.php" method="post">
           <input type="text" name="email" placeholder="Email">

@@ -1,4 +1,4 @@
-  <section id="ChangeData">
+  <section id="Login-Register">
     <body>
     <?php
       switch($data) {
