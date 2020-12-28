@@ -1,0 +1,144 @@
+#profile{
+  width: 30%;
+  float: left;
+  padding-left: 20px;
+}
+
+#info {
+  margin-bottom: 15px;
+  padding-left: 5px;
+  width: 400px;
+  font-family: sans-serif;
+}
+
+#info .data {
+  padding-bottom: 10px;
+}
+
+#info h3 {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #1f1f14;
+  position: relative;
+  color: #e54e2e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#info .data h4 {
+  color: black;
+  margin-bottom: 2px;
+  letter-spacing: 0.5px;
+  padding-left: 1em;
+}
+
+#info .data p {
+  font-size: 20px;
+  margin-bottom: 1px;
+  color: #000033;
+  padding-left: 1em;
+}
+
+#info .options {
+  padding-bottom: 10px;
+}
+
+#info .options ul {
+  list-style-type: none;
+}
+
+#info .options li {
+  padding-bottom: 6px;
+}
+
+#info .options a {
+  font-size: 20px;
+  margin-bottom: 1px;
+  color: #000033;
+  text-decoration: none;
+  text-decoration-color: #222222;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #e54e2e;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+#info .options a:hover {
+  width: 50%;
+  align-self: flex-end;
+  background-color: #222222;
+  color: #e54e2e;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 2em;
+}
+
+#info .orders a{
+  font-size: 20px;
+  margin-bottom: 1px;
+  color: #000033;
+  text-decoration: none;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-color: #e54e2e;
+  border-radius: 2em;
+  font-weight: bold;
+}
+
+#info .orders a:hover {
+  width: 50%;
+  align-self: flex-end;
+  background-color: #222222;
+  color: #e54e2e;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-radius: 2em;
+}
+
+#changedata{
+  width: 70%;
+  float: right;
+  padding-right: 30px;
+}
+
+#changedata h3 {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #1f1f14;
+  position: relative;
+  color: #e54e2e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#changedata form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 1.5em;
+}
+
+#changedata input {
+  margin: 1em 0;
+  padding-left: 1em;
+  height: 2.5em;
+  border-radius: 2em;
+}
+
+#changedata input:last-of-type {
+  width: 50%;
+  align-self: flex-end;
+  padding: 0;
+  background-color: #222222;
+  color: #e54e2e;
+  font-weight: bold;
+}
+
+#changedata input:last-of-type:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}

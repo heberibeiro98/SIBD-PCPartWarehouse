@@ -1,7 +1,7 @@
 <?php
   $title = 'Iniciar sessão';
   include("header.php"); ?>
-  <section id="Login">
+  <section id="Login-Register">
     <body>
         <form action="../action_login.php" method="post">
           <input type="text" name="email" placeholder="Email">

@@ -1,27 +1,47 @@
 #Orders table {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
+  margin: 2em auto 0 auto;
+  border-collapse: collapse;
+  font-family: sans-serif;
+}
+
+#Orders tr {
+  background-color: #ddd;
 }
 
 #Orders tr:hover {
-  background: #ddd;
+  background-color: #bbb;
+}
+
+#Orders tr:first-of-type:hover {
+  background-color: #222222;
+}
+
+#Orders tr:first-of-type {
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #222222;
+  color: #e54e2e;
 }
 
 #Orders td {
   border: 1px solid #000;
   border-collapse: collapse;
   text-decoration: none;
-  padding-right: 5px;
+  padding: 1em 2em;
   text-align: center;
 }
 
 #Orders td a {
   display: block;
-  padding: 5px 20px;
   text-decoration: none;
   color: black;
 }
+
+
+
+/*----------------------------------------------------------*/
+
+
 
 #Order table {
   width: 100%;

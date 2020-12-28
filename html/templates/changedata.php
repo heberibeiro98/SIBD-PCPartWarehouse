@@ -1,5 +1,5 @@
-  <section id="ChangeData">
-    <body>
+  <section id="changedata">
+    <h3>Alterar <?=$data?></h3>
     <?php
       switch($data) {
         case 'Nome': ?>

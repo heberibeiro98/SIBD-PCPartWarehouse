@@ -6,8 +6,6 @@
     session_start();
   }
 
-  $clientinfo = getClientInfo($_SESSION['emailconta']);
-
   $title = 'Perfil de utilizador';
 
   include('templates/header.php');

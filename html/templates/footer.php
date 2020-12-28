@@ -1,3 +1,4 @@
+  </div>
     <div class="footer">
       <div class="marca_registada">
         <p>@2021 PCPart Warehouse</p>
