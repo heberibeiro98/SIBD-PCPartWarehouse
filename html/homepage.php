@@ -15,6 +15,7 @@
 <?php
   $randSerialNo = getRandomProducts();
   $products = getProductsByNumSeries($randSerialNo);
+  $isHomepage = true;
   include('templates/category.php');
   include('templates/footer.php');
 ?>
