@@ -10,7 +10,6 @@
 
 #Orders tr:hover {
   background-color: #bbb;
-  cursor: pointer;
 }
 
 #Orders tr:first-of-type:hover {
@@ -34,7 +33,6 @@
 
 #Orders td a {
   display: block;
-  padding: 5px 20px;
   text-decoration: none;
   color: black;
 }
