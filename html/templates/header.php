@@ -2,9 +2,6 @@
   if(!isset($_SESSION)) {
     session_start();
   }
-
-  echo $_SESSION['message'];
-  unset($_SESSION['message']);
 ?>
 
 <!DOCTYPE html>
@@ -62,3 +59,6 @@
         </div>
       </div>
       <br class="hdr_break">
+
+      <?php echo $_SESSION['message'];
+      unset($_SESSION['message']); ?>

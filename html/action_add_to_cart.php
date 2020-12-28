@@ -31,5 +31,6 @@
     $aux = $_SESSION['cart'][$numserie]['Quantidade'] += 1;
   }
 
+  $_SESSION['message'] = 'Produto adicionado ao carrinho!';
   header('Location: ' . $_SERVER['HTTP_REFERER']);
 ?>

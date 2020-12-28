@@ -33,4 +33,41 @@
     $stmt->execute(array($category));
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
+
+  function getProductsBySearch($category, $search_name, $search_min, $search_max) {
+    global $dbh;
+    $queryMarca = 'SELECT * FROM Artigo WHERE Categoria = ?';
+    $queryModelo = 'OR Categoria = ?';
+    $paramsMarca = array($category);
+    $paramsModelo = array($category);
+
+    if ($search_name != '') {
+      $queryMarca = $queryMarca . ' AND Marca LIKE ?';
+      $queryModelo = $queryModelo . ' AND Modelo LIKE ?';
+      $paramsMarca[] = "%$search_name%";
+      $paramsModelo[] = "%$search_name%";
+    }
+
+    if ($search_min != '') {
+      $queryMarca = $queryMarca . ' AND Preço >= ?';
+      $queryModelo = $queryModelo . ' AND Preço >= ?';
+      $paramsMarca[] = $search_min;
+      $paramsModelo[] = $search_min;
+    }
+
+    if ($search_max != '') {
+      $queryMarca = $queryMarca . ' AND Preço <= ?';
+      $queryModelo = $queryModelo . ' AND Preço <= ?';
+      $paramsMarca[] = $search_max;
+      $paramsModelo[] = $search_max;
+    }
+
+    $query = $queryMarca." ".$queryModelo;
+    $params = array_merge($paramsMarca, $paramsModelo);
+
+    $stmt = $dbh->prepare($query);
+    $stmt->execute($params);
+
+    return $stmt->fetchAll();
+  }
  ?>

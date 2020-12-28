@@ -34,14 +34,12 @@
       $_SESSION['message'] = 'Número de telefone introduzido inválido!';
       header("Location: templates/register.php");
       exit();
-
     }
 
-    if(strlen((string)$num_telefone) != 9) {
+    if(strlen((string)$nif) != 9) {
       $_SESSION['message'] = 'NIF introduzido inválido!';
       header("Location: templates/register.php");
       exit();
-
     }
 
     $stmt = $dbh->prepare('SELECT COUNT(*) FROM Conta WHERE Email = ?');
@@ -54,7 +52,7 @@
     }
 
     $ca = $dbh->prepare('INSERT INTO Conta(Email, Password, Nome, Morada, Num_telefone, NIF) VALUES(? , ?, ?, ?, ?, ?)');
-    $ca->execute(array($email, $password, $nome, $morada, $num_telefone, $nif));
+    $ca->execute(array($email, sha1($password), $nome, $morada, $num_telefone, $nif));
     $_SESSION['message'] = 'Registo bem sucedido!';
     header("Location: homepage.php");
   }

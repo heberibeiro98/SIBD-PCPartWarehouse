@@ -15,11 +15,14 @@
           </article>
         <?php } ?>
       </section>
-      <div id="pagination">
-        <a href="?category=<?=$category?>&page=<?=$page-1?>">&lt;</a>
-        <?= $page ?>
-        <a href="?category=<?=$category?>&page=<?=$page+1?>">&gt;</a>
-      </div>
+      <?php if(!isset($search_name) || !isset($search_min) || !isset($search_max)) {
+        if(!isset($isHomepage)) { ?>
+        <div id="pagination">
+          <a href="?category=<?=$category?>&page=<?=$page-1?>">&lt;</a>
+          <?= $page ?>
+          <a href="?category=<?=$category?>&page=<?=$page+1?>">&gt;</a>
+        </div>
+      <?php } } ?>
     </body>
   </section>
 </div>

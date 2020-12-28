@@ -7,12 +7,12 @@
      <h2>NIF: <?=$clientinfo['NIF']?></h2>
     <div class="profile-options">
       <ul>
-        <li><a href="/changedata_reedirect.php?data=Nome">Alterar nome</li>
-        <li><a href="/changedata_reedirect.php?data=Morada">Alterar morada</li>
-        <li><a href="/changedata_reedirect.php?data=Num_telefone">Alterar número de telefone</li>
-        <li><a href="/changedata_reedirect.php?data=NIF">Alterar NIF</li>
-        <li><a href="/changedata_reedirect.php?data=Password">Alterar Password</li>
-        <li><a href="/action_check_encomendas.php">Ver encomendas</li>
+        <li><a href="/changedata_reedirect.php?data=Nome">Alterar nome</a></li>
+        <li><a href="/changedata_reedirect.php?data=Morada">Alterar morada</a></li>
+        <li><a href="/changedata_reedirect.php?data=Num_telefone">Alterar número de telefone</a></li>
+        <li><a href="/changedata_reedirect.php?data=NIF">Alterar NIF</a></li>
+        <li><a href="/changedata_reedirect.php?data=Password">Alterar Password</a></li>
+        <li><a href="/action_check_encomendas.php">Ver encomendas</a></li>
       </ul>
     </div>
    </body>

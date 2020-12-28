@@ -13,8 +13,8 @@
 <h1>Os nossos produtos</h1>
 
 <?php
-  $randSerialNo = getRandomProducts();
-  $products = getProductsByNumSeries($randSerialNo);
+  $products = getProductsRand();
+  $isHomepage = true;
   include('templates/category.php');
   include('templates/footer.php');
 ?>
