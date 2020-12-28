@@ -27,7 +27,7 @@
       </div>
       <div class="orders">
         <h3>Encomendas</h3>
-        <a href="/action_check_encomendas.php">Ver encomendas</a>
+        <div><a href="/action_check_encomendas.php">Ver encomendas</a></div>
       </div>
     </div>
    </body>

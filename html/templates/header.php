@@ -38,7 +38,7 @@
           </div>
         </div>
         <div class="centerNav">
-          <a href="/homepage.php">
+          <a href="/action_homepage.php">
             <img src="/images/smol_logo.png" alt="PCPart Warehouse logo small">
           </a>
         </div>
