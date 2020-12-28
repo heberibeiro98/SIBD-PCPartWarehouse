@@ -25,7 +25,6 @@
     $page = 1;
   }
 
-
   if (isset($search_name) && isset($search_min) && isset($search_max)) {
     $products = getProductsBySearch($category, $search_name, $search_min, $search_max);
   }

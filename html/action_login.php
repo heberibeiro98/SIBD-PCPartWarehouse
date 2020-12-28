@@ -15,7 +15,7 @@
 
   else {
     $stmt = $dbh->prepare('SELECT Id FROM Conta WHERE Email = ? AND Password = ?');
-    $stmt->execute(array($email, $password));
+    $stmt->execute(array($email, sha1($password)));
 
     if($checkemail = $stmt->fetch(PDO::FETCH_ASSOC)) {
       $id = $checkemail['Id'];

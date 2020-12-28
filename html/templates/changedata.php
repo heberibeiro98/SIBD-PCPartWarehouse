@@ -18,7 +18,7 @@
         <?php
           break;
 
-        case 'Num_telefone': ?>
+        case 'Número de telefone': ?>
         <form action="/action_changedata.php?data=Num_telefone" method="post">
           <input type="text" name="num_telefone" placeholder="Novo número de telefone">
           <input type="submit" value="Submeter">
@@ -36,8 +36,8 @@
 
         case 'Password': ?>
         <form action="/action_changedata.php?data=Password" method="post">
-          <input type="text" name="oldpw" placeholder="Password antiga">
-          <input type="text" name="newpw" placeholder="Password nova">
+          <input type="password" name="oldpw" placeholder="Password antiga">
+          <input type="password" name="newpw" placeholder="Password nova">
           <input type="submit" value="Submeter">
         </form>
         <?php

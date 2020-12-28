@@ -8,3 +8,18 @@
 * add home button to header to redirect to homepage (um icone de uma casa)
 * header should be fixed, so it's always there even if you scroll down a lot
 * adicionar pesquisa e talvez filtros tipo preço max min, como o prof fez na aula
+
+----------------------------------------------------------------------------------
+
+* CSS no perfil - Héber
+* CSS registo e login - João
+* Acrescentar remover items e limpar carrinho - Héber
+* CSS no carrinho - Héber
+* CSS nas alteraçoes de dados do perfil - João
+* CSS na tabela das encomendas - João
+* CSS nas encomendas feitas - Héber
+
+
+* Adicionar disponivel em stock no product card
+* Adicionar mensagem sobre demora caso nao haja stock
+
