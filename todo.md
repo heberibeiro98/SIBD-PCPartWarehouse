@@ -13,7 +13,7 @@
 
 * CSS no perfil - Héber - done
 * CSS registo e login - João - done
-* Acrescentar remover items e limpar carrinho - Héber
+* Acrescentar remover items e limpar carrinho - Héber - Done
 * CSS no carrinho - Héber
 * CSS nas alteraçoes de dados do perfil - João
 * CSS na tabela das encomendas - João
