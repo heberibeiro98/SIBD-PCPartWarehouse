@@ -8,14 +8,13 @@
   include("templates/header.php");
 ?>
 
-<a href="homepage.php">
+<a href="action_homepage.php">
   <img src="/images/logo.png" id="logo" alt="PCPart Warehouse logo">
 </a>
 <h1>Os nossos produtos</h1>
 
 <?php
-  $products = getProductsRand();
   $isHomepage = true;
-  include('templates/category.php');
+  include('templates/homepage.php');
   include('templates/footer.php');
 ?>
