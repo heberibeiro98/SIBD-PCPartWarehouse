@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/login-register.css">
     <link rel="stylesheet" href="/css/profile.css">
+    <link rel="stylesheet" href="/css/encomenda.css">
+    <link rel="stylesheet" href="/css/checkout.css">
   </head>
   <body>
     <div class="page_wrapper">
@@ -38,7 +40,7 @@
           </div>
         </div>
         <div class="centerNav">
-          <a href="/action_homepage.php">
+          <a href="/homepage.php">
             <img src="/images/smol_logo.png" alt="PCPart Warehouse logo small">
           </a>
         </div>
@@ -62,5 +64,7 @@
       </div>
       <br class="hdr_break">
 
-      <?php echo $_SESSION['message'];
-      unset($_SESSION['message']); ?>
+      <?php if(isset($_SESSION['message'])) { ?>
+      <div class="INFO-Message"><?php echo $_SESSION['message'];
+      unset($_SESSION['message']); ?></div>
+      <?php } ?>

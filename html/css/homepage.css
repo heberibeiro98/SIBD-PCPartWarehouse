@@ -13,6 +13,7 @@
   flex-wrap: wrap;
   padding-top: 10px;
   justify-content: center;
+  flex-direction: column;
 }
 
 #Homepage .wrapper article {
@@ -23,7 +24,6 @@
   font-family: arial;
   padding: 1em; margin: 1em;
   flex-grow: 1;
-  display: grid;
 }
 
 #Homepage .wrapper article a {
@@ -65,4 +65,32 @@
 #Homepage .wrapper article form button:hover {
   opacity: 0.7;
   .list
+}
+
+#Homepage .wrapper section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+#Homepage .wrapper h2 {
+  font-family: sans-serif;
+  padding: 0.2em 0 0.2em 2em;
+  margin: 0.5em 0;
+  background-color: #e54e2e;
+  color: #222222;
+}
+
+#Homepage .wrapper > a {
+  text-decoration: none;
+}
+
+.homepage-intro h1 {
+  font-family: sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #222222;
+  text-shadow: -1px 0 #e54e2e, 0 1px #e54e2e, 1px 0 #e54e2e, 0 -1px #e54e2e;
+  margin: 0.5em 0;
 }

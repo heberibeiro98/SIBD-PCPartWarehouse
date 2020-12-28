@@ -8,10 +8,10 @@
   include("templates/header.php");
 ?>
 
-<a href="action_homepage.php">
-  <img src="/images/logo.png" id="logo" alt="PCPart Warehouse logo">
-</a>
-<h1>Os nossos produtos</h1>
+<div class="homepage-intro">
+  <h1>O armazém com todas as partes que precisas!</h1>
+</div>
+
 
 <?php
   $isHomepage = true;

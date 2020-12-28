@@ -1,9 +1,9 @@
 <section id="Homepage">
   <body>
     <section class="wrapper">
+      <?php $products = getProductsRand('Monitor'); ?>
+      <a href="list_products.php?category=Monitor"><h2>Monitores</h2></a>
       <section class="cat1">
-        <?php $products = getProductsRand('Monitor'); ?>
-        <h2>Monitores</h2>
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -26,9 +26,10 @@
         <?php } ?>
       </section>
 
-      <section class="cat2">
+
         <?php $products = getProductsRand('Rato'); ?>
-        <h2>Ratos</h2>
+        <a href="list_products.php?category=Rato"><h2>Ratos</h2></a>
+        <section class="cat2">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -51,9 +52,10 @@
         <?php } ?>
       </section>
 
-      <section class="cat3">
+
         <?php $products = getProductsRand('Teclado'); ?>
-        <h2>Teclados</h2>
+        <a href="list_products.php?category=Teclado"><h2>Teclados</h2></a>
+        <section class="cat3">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -76,9 +78,10 @@
         <?php } ?>
       </section>
 
-      <section class="cat4">
+
         <?php $products = getProductsRand('Headphones'); ?>
-        <h2>Headphones</h2>
+        <a href="list_products.php?category=Headphones"><h2>Headphones</h2></a>
+        <section class="cat4">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -101,9 +104,9 @@
         <?php } ?>
       </section>
 
-      <section class="cat5">
         <?php $products = getProductsRand('Processador'); ?>
-        <h2>Processadores</h2>
+        <a href="list_products.php?category=Processador"><h2>Processadores</h2></a>
+        <section class="cat5">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -126,9 +129,10 @@
         <?php } ?>
       </section>
 
-      <section class="cat6">
+
         <?php $products = getProductsRand('Placa gráfica'); ?>
-        <h2>Placas gráficas</h2>
+        <a href="list_products.php?category=Placa gráfica"><h2>Placas gráficas</h2></a>
+        <section class="cat6">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -151,9 +155,10 @@
         <?php } ?>
       </section>
 
-      <section class="cat7">
+
         <?php $products = getProductsRand('RAM'); ?>
-        <h2>Memórias RAM</h2>
+        <a href="list_products.php?category=RAM"><h2>Memórias RAM</h2></a>
+        <section class="cat7">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -176,9 +181,10 @@
         <?php } ?>
       </section>
 
-      <section class="cat8">
+
         <?php $products = getProductsRand('PSU'); ?>
-        <h2>Discos de armazenamento</h2>
+        <a href="list_products.php?category=PSU"><h2>Fontes de alimentação</h2></a>
+        <section class="cat8">
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
@@ -201,8 +207,9 @@
         <?php } ?>
       </section>
 
+      <?php $products = getProductsRand('Disco'); ?>
+      <a href="list_products.php?category=Disco"><h2>Discos de armazenamento</h2></a>
       <section class="cat9">
-        <?php $products = getProductsRand('Disco'); ?>
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
