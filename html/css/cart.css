@@ -1,15 +1,130 @@
-#Cart table {
-  width: 100%;
-  border-top: 2px solid var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
+#Cart {
+  font-family: sans-serif;
 }
 
-#Cart table td {
+#Cart h3{
+  margin: 2em 0 1em 0;
+  padding-bottom: 0.5em;
+  padding-left: 30px;
+  position: relative;
+  color: #e54e2e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  float: left;
+}
+
+#Cart h2{
+  text-align: center;
+  padding-top: 100px;
+}
+
+#Cart input {
+  margin: 1em 0;
+  padding-left: 1em;
+  height: 2.5em;
+  border-radius: 2em;
+}
+
+#Cart .orders table {
+  width: 97%;
+  border-top: 2px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  margin: 2em auto 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+#Cart .orders tr {
+  background-color: #ddd;
+}
+
+#Cart .orders tr:hover {
+  background-color: #bbb;
+}
+
+#Cart .orders td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  text-decoration: none;
+  padding: 1em 2em;
   text-align: center;
 }
 
+#Cart .orders table td {
+  text-align: center;
+}
+
+#Cart .orders tr:first-of-type {
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #222222;
+  color: #e54e2e;
+}
+
+#Cart .checkout{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  float: right;
+  margin-right: 55px;
+  align-items: center;
+}
+
+#Cart .checkout p {
+  padding-right: 25px;
+  font-size: 20px;
+  margin-bottom: 1px;
+  color: #000033;
+  font-weight: bold;
+}
+
+#Cart .checkout input[type=submit] {
+  width: 150%;
+  align-self: flex-end;
+  padding: 0;
+  background-color: #222222;
+  color: #e54e2e;
+  font-weight: bold;
+}
+
+#Cart .checkout input[type=submit]:hover {
+  width: 150%;
+  align-self: flex-end;
+  padding: 0;
+  background-color: #e54e2e;
+  color: #222222;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#Cart .clean {
+  width: 50%;
+}
+
+#Cart .clean input[type=submit]{
+  width: 23%;
+  align-self: flex-end;
+  padding: 0;
+  background-color: #222222;
+  color: #e54e2e;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+#Cart .clean input[type=submit]:hover{
+  width: 23%;
+  align-self: flex-end;
+  padding: 0;
+  background-color: #e54e2e;
+  color: #222222;
+  font-weight: bold;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 #Cart table img {
-  width: 2em;
+  width: 5em;
 }
 
 #Cart table td:nth-child(-n+2) {

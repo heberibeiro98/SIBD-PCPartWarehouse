@@ -1,0 +1,54 @@
+#Checkout{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  font-family: sans-serif;
+}
+
+#Checkout .data {
+  margin-bottom: 15px;
+  padding-left: 5px;
+}
+
+#Checkout .data p{
+  margin-bottom: 5px;
+}
+
+#Checkout h3 {
+  margin: 2em 0 1em 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #1f1f14;
+  position: relative;
+  color: #e54e2e;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+#Checkout .payment{
+  text-align: center;
+}
+
+#Checkout .payment input{
+  margin-bottom: 10px;
+}
+
+#Checkout .payment input:last-of-type{
+  width: 50%;
+  margin-top: 5px;
+  padding: 4px 0;
+  background-color: #222222;
+  color: #e54e2e;
+  font-weight: bold;
+  border-radius: 2em;
+}
+
+#Checkout .payment input:last-of-type:hover{
+  width: 50%;
+  padding: 4px 0;
+  background-color: #e54e2e;
+  color: #222222;
+  font-weight: bold;
+  cursor: pointer;
+}
