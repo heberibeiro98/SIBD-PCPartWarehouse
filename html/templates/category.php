@@ -15,6 +15,11 @@
           </article>
         <?php } ?>
       </section>
+      <div id="pagination">
+        <a href="?category=<?=$category?>&page=<?=$page-1?>">&lt;</a>
+        <?= $page ?>
+        <a href="?category=<?=$category?>&page=<?=$page+1?>">&gt;</a>
+      </div>
     </body>
   </section>
 </div>

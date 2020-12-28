@@ -1,9 +1,9 @@
 <?php
-  function getProductsByCategory($category) {
+  function getProductsByCategory($category, $offset) {
     global $dbh;
 
-    $stmt = $dbh->prepare('SELECT * FROM Artigo WHERE Categoria = ?');
-    $stmt->execute(array($category));
+    $stmt = $dbh->prepare('SELECT * FROM Artigo WHERE Categoria = ? LIMIT 4 OFFSET ?');
+    $stmt->execute(array($category, $offset*2));
 
     return $stmt->fetchAll();
   }
@@ -24,5 +24,13 @@
     $stmt->execute(array($numref));
 
     return $stmt->fetchAll();
+  }
+
+  function getNumberOfProductsByCategory($category) {
+    global $dbh;
+
+    $stmt = $dbh->prepare('SELECT COUNT(*) AS count FROM Artigo WHERE Categoria = ?');
+    $stmt->execute(array($category));
+    return $stmt->fetch(PDO::FETCH_ASSOC);
   }
  ?>
