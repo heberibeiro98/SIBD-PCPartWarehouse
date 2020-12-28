@@ -64,3 +64,10 @@
 #Product hr {
   color: #e54e2e;
 }
+
+#Product .nota{
+  padding-left: 4em;
+  font-size: 14px;
+  color: darkred;
+  font-family: sans-serif;
+}

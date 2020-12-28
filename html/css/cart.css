@@ -130,3 +130,10 @@
 #Cart table td:nth-child(-n+2) {
   text-align: left;
 }
+
+#Cart .nota{
+  padding-left: 2em;
+  font-size: 14px;
+  color: darkred;
+  font-family: sans-serif;
+}

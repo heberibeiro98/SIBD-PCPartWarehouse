@@ -4,7 +4,7 @@
         <?php foreach($products as $Artigo) { ?>
           <article>
             <a href="product_page.php?numserie=<?=$Artigo['Num_serie']?>&category=<?=$Artigo['Categoria']?>">
-              <h3><?=$Artigo['Marca']?> <?=$Artigo['Modelo']?></h2>
+              <h3><?=$Artigo['Marca']?> <?=$Artigo['Modelo']?></h3>
               <img src="./images/<?=$Artigo['Categoria']?>/<?=$Artigo['Modelo']?>.jpg">
             </a>
             <?php $quantidade = GetStockQuantity($Artigo['Num_serie'], 1);

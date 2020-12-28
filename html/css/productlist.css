@@ -81,7 +81,9 @@
 .search button {
   color: #e54e2e;
   background-color: #222222;
-  border: none;
+  border-radius: 2px;
+  border-width: thick;
+  border-color: #222222;
   padding: 0.5em;
 }
 

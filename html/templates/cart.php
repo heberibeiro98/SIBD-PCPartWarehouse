@@ -34,6 +34,7 @@
           <input type="submit" value="Limpar carrinho">
         </form>
       </div>
+      <p class="nota">*Nota: Produtos fora de stock têm um tempo de entrega maior.</p>
       <?php }
       else { ?>
       <h2>O seu carrinho está vazio!</h2>
