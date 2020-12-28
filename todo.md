@@ -20,6 +20,15 @@
 * CSS nas encomendas feitas - Héber
 
 
-* Adicionar disponivel em stock no product card
-* Adicionar mensagem sobre demora caso nao haja stock
+* Adicionar disponivel em stock no product card - Done
+* Adicionar mensagem sobre demora caso nao haja stock 
+
+---------------------------------------------------------------------------------
+CSS EM FALTA:
+
+* Carrinho
+* Checkout
+* Encomenda
+* Homepage
+* Searchbar
 
